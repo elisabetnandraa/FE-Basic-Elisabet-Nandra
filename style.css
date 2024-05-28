@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #F5F5F5; 
+    color: #654321; 
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #D2B48C; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #654321; 
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    color: #654321; 
+}
+
+aside {
+    background-color: #ece4dc; 
+    padding: 1em;
+    flex: 1;
+}
+
+main {
+    background-color: #F5F5F5; 
+    padding: 1em;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+main h2{
+    width: 100%;
+    text-align: center;
+    margin: 0; 
+    margin-bottom: 1em; 
+}
+
+main p {
+    width: 100%;
+    text-align: justify;
+    margin: 0; 
+    margin-bottom: 1em; 
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.info-label {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+.info-value {
+    flex: 1;
+    text-align: left;
+}
+
+footer {
+    background-color: #D2B48C; 
+    color: #654321; 
+    text-align: center;
+    padding: 1em 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: #D2B48C; 
+}
+
+table, th, td {
+    border: 1px solid #654321; 
+    color: #654321; 
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #D2B48C; 
+
+img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 1em auto; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        flex: 1 100%;
+    }
+}
